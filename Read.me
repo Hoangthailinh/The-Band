@@ -1,0 +1,86 @@
+Thẻ Table:
+<table>
+      <thead>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Địa chỉ</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Hoàng Trang</td>
+          <td>Hạ Long</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Hoàng Linh</td>
+          <td>Hạ Long</td>
+        </tr>
+      </tbody>
+</table>
+===============================================================================================================
+Attribute là thuộc tính của các thẻ HTML ví dụ: title,style,onclick,class,id...
+===============================================================================================================
+Có 3 cách sử dụng CSS trong html:
+    - Internal -> sử dụng một cặp style đặt trong file html
+    - External -> Tạo một file riêng style.css và gắn thẻ link để dẫn đến file css vào file html
+    - Inline -> Viết vào thẻ mở sử dụng Attribute style="";
+===============================================================================================================
+Những bọn chọn selector CSS:
+
+.class -> .intro -> Chọn tất cả các thẻ có class="intro"
+
+.class1.class2 -> .name1.name2 -> Chọn tất cả các thẻ có cả name1 và name2 được đặt trong thuộc tính class của nó
+
+.class1 .class2 -> name1 .name2 -> Chọn tất cả các thẻ có class="name2" là con của một phần tử có class="name1"
+
+* -> * -> Chọn tất cả các thẻ
+
+element -> h2 -> Chọn tất cả các thẻ h2
+
+element.class -> div.box -> Chọn tất cả thẻ div có class="box"
+
+element, element -> div, h2 -> Chọn tất cả thẻ div và h2
+
+element element -> div p -> Chọn tất cả các thẻ p trong thẻ div
+
+element > element -> div > p -> Chọn tất cả thẻ p là con trực tiếp của thẻ div
+
+element + element -> div + p -> Chọn thẻ p đứng liền kề sau thẻ div
+
+element ~ element -> div ~ p -> Chọn tất cả thẻ p đứng sau thẻ div
+===============================================================================================================
+CSS Variable
+
+:root {
+    --text-color: green;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+===============================================================================================================
+Những bước để làm website:
+1. Phân tích mẫu website ra những thành phần trong trang website
+- Header
+- Slider
+- Content:
+  - About
+  - Tour
+  - Contact
+  - Image
+- Footer
+2. Dựng base (xây móng)
+3. Xây dựng từng phần theo phân tích
+4. Hoàn Thiện
+
+Những thành phần thường gặp trên giao diện website:
+1. Header (đầu trang)
+2. Navigation (điều hướng)
+3. Breadcrum (hướng xem người dùng đang ở đâu)
+4. Sidebar (một thanh đặt ở một hướng của màn hình trái hoặc phải)
+5. Slider (Nội dung trượt , thông thường là hình ảnh)
+6. Content (Nội dung chính của website)
+7. Banner (Ảnh)
+8. Footer (Chân trang)
